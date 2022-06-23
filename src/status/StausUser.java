@@ -13,7 +13,10 @@ public class StausUser
 {
    public void statusDetail(String code)
 {
-switch(code.toUpperCase())
+    public enum Code={"ZERO", "ONE", "TWO","THREE"};
+    private Code code;
+    switch(Code c)
+//switch(code.toUpperCase())
         {
         case "ZERO": System.out.println("REJECTED");
         break;
